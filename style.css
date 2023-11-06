@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.mainContainer {
+    width: 661px;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #c4c4c4;
+}
+.searchList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: lightcoral; */
+    height: 300px;
+}
+.search {
+    margin: 30px 30px 0 30px;
+    height: 61px;
+    border-color: none;
+    font-size: 30px;
+    padding-left: 10px;
+}
+.cardList {
+    height: 100%;
+}
+
+.wrapperCardSearch {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+.cardSearch {
+    border: 1px solid black;
+    font-size: 30px;
+    font-weight: 400;
+    height: 44px;
+    background-color: #e3e3e3;
+    padding-left: 10px;
+    list-style-type: none;
+}
+.cardSearch:hover {
+    background-color: aqua;
+}
+.cardDescription {
+    display: flex;
+    flex-direction: column;
+}
+.btnLogoDelete {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+}
+.btnLogoDelete:hover {
+    opacity: 50%;
+}
+.cardFavorite {
+    font-size: 24px;
+    height: 100px;
+    background-color: #e27beb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0 30px;
+    padding: 0 30px;
+}
+.logoDeleteline1 {
+    position: relative;
+    width: 5px;
+    height: 50px;
+    top: -6px;
+    left: 17px;
+    transform: rotate(45deg);
+    background-color: red;
+}
+.logoDeleteline2 {
+    position: relative;
+    top: -56px;
+    left: 17px;
+    width: 5px;
+    height: 50px;
+    border: 4px;
+    transform: rotate(-45deg);
+    background-color: red;
+}
