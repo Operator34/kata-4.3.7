@@ -81,26 +81,26 @@ function addItemSearchList(dataSearch) {
         wrapper.classList.add("wrapperCardFavorites");
 
         //Текстовое описание
-        cardDescription = document.createElement("div");
+        const cardDescription = document.createElement("div");
         cardDescription.classList.add("cardDescription");
-        cardFavorite = document.createElement("div");
+        const cardFavorite = document.createElement("div");
         cardFavorite.classList.add("cardFavorite");
         cardFavorite.setAttribute("id", selectedElem.id);
-        cardName = document.createElement("p");
+        const cardName = document.createElement("p");
         cardName.textContent = `Name: ${selectedElem.name}`;
-        cardOwner = document.createElement("p");
+        const cardOwner = document.createElement("p");
         cardOwner.textContent = `Owner: ${selectedElem.owner.login}`;
-        cardStars = document.createElement("p");
+        const cardStars = document.createElement("p");
         cardStars.textContent = `Stars: ${selectedElem.stargazers_count}`;
         cardDescription.append(cardName, cardOwner, cardStars);
         cardFavorite.append(cardDescription);
         // Крестик удалить
-        btnLogoDelete = document.createElement("div");
+        const btnLogoDelete = document.createElement("div");
         btnLogoDelete.classList.add("btnLogoDelete");
         btnLogoDelete.setAttribute("id", selectedElem.id);
-        logoDeleteline1 = document.createElement("div");
+        const logoDeleteline1 = document.createElement("div");
         logoDeleteline1.classList.add("logoDeleteline1");
-        logoDeleteline2 = document.createElement("div");
+        const logoDeleteline2 = document.createElement("div");
         logoDeleteline2.classList.add("logoDeleteline2");
         btnLogoDelete.append(logoDeleteline1, logoDeleteline2);
         cardFavorite.append(btnLogoDelete);
@@ -116,7 +116,7 @@ function addItemSearchList(dataSearch) {
 }
 
 function delCardFavorite(event) {
-    deleteCardFavorite = cardList.querySelector(
+    const deleteCardFavorite = cardList.querySelector(
         `[id="${event.currentTarget.id}"]`
     );
     deleteCardFavorite.remove();
